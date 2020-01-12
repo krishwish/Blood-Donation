@@ -1,0 +1,268 @@
+body, html{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	line-height: 1.8em;
+	color: #666;
+	background-image: url(img.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+section.sec1{
+	height: 35px;
+	box-sizing: border-box;
+    background-repeat: no-repeat;
+}
+nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 70px;
+	background: rgb(0,0,0,0.8);
+	padding: 0 100px;
+	box-sizing: border-box;
+}
+nav .brand{
+	float: left;
+	height: 100%;
+	line-height: 70px;
+}
+nav .brand .log img{
+	width: 20%;
+	height: 70px;
+
+}
+nav ul{
+	float: right;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+nav ul li{
+	list-style: none;
+
+}
+nav ul li a{
+	position: relative;
+	display: block;
+	height: 70px;
+	line-height: 70px;
+	padding: 0 20px;
+	box-sizing: border-box;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: .5s;
+	border-radius: 8px;
+}
+nav ul li a:hover{
+	color:#262626;
+}
+nav ul li a:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgb(247, 74, 74);
+	transform-origin: right;
+	z-index: -1;
+	transform: scaleX(0);
+	transition: transform .5s;
+}
+nav ul li a:hover:before{
+	transform-origin: left;
+	transform: scaleX(1);
+}
+nav ul li a.active{
+	background: #E2472F;
+	color: #fff;
+	border-radius: 8px;
+
+}
+.box{
+	margin: 0;
+	padding: 0;
+	position: relative;
+	left: 35%;
+	top: 2%;
+	height: 700px;
+	width: 400px;
+	background: rgb(0,0,0,0.4);
+}
+.box:hover{
+	box-shadow: 0 0 20px #fff;
+}
+.box h2{
+	color: #fff;
+	padding: 10px;
+	text-transform: uppercase;
+	
+	font-size: 30px;
+	text-align: center;
+	font-family: "Lato Black", sans-serif;
+}
+.box .inputbox{
+	position: relative;
+}
+.box .inputbox input{
+	width: 80%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid #fff;
+	outline: none;
+	background: transparent;
+}
+.box .inputbox label{
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-left: 10px;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	pointer-events: none;
+	transition: .5s;
+	line-height: 3px;
+}
+
+.box .inputbox input:focus ~ label,
+.box .inputbox input:valid ~ label
+
+{
+	top: -18px;
+	left: 0;
+	font-size: 12px;
+}
+
+.option label{
+	margin-left: 10px;
+	top: 0;
+	left: 0;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	pointer-events: none;
+	transition: .5s;
+	line-height: 3px;
+}
+.option select{
+	position: relative;
+	left: 20px;
+	margin: 0;
+	padding: 0 20px;
+	color: #fff;
+	background: rgb(0,0,0,0.6);
+	border-radius: 5px;
+}
+.gender label{
+	margin-left: 10px;
+	top: 0;
+	left: 0;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	pointer-events: none;
+	transition: .5s;
+	line-height: 30px;
+
+}
+
+.gender select{
+	position: relative;
+	left: 50px;
+	margin: 0;
+	padding: 0 20px;
+	color: #fff;
+	background: rgb(0,0,0,0.6);
+	border-radius: 5px;
+}
+.box .inputbox2{
+	position: relative;
+}
+.box .inputbox2 input{
+	width: 20%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid #fff;
+	outline: none;
+	background: transparent;
+}
+.box .inputbox2 label{
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-left: 10px;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	pointer-events: none;
+	transition: .5s;
+	line-height: 10px;
+}
+
+.box .inputbox2 input:focus ~ label,
+.box .inputbox2 input:valid ~ label
+
+{
+	top: -18px;
+	left: 0;
+	font-size: 12px;
+}
+.don label{
+	margin-left: 10px;
+	top: 0;
+	left: 0;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	pointer-events: none;
+	transition: .5s;
+	line-height: 30px;
+
+}
+
+.don select{
+	position: relative;
+
+	left: 5px;
+	margin: 0;
+	padding: 0 20px;
+	color: #fff;
+	background: rgb(0,0,0,0.6);
+	border-radius: 5px;
+}
+.submit{
+	margin-left: 10px;
+	position: relative;
+	top: 90%;
+	left: 40%;
+	font-size: 16px;
+	background: transparent;
+    color: #fff;
+    border-radius: 50px;
+	transition: .5s;
+	line-height: 30px;
+	box-sizing: border-box;
+	outline: 1px solid #fff;
+}
+.submit:hover{
+	color: #111;
+	box-shadow: 0 0 20px #fff;
+}

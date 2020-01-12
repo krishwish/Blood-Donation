@@ -1,0 +1,167 @@
+body, html{
+	height: 100%;
+	margin: 0;
+	font-size: 16px;
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	line-height: 1.8em;
+	color: #666;
+	background-image: url(img.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+section.sec1{
+	height: 35px;
+	box-sizing: border-box;
+    background-repeat: no-repeat;
+}
+nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 70px;
+	background: rgb(0,0,0,0.8);
+	padding: 0 100px;
+	box-sizing: border-box;
+}
+nav .brand{
+	float: left;
+	height: 100%;
+	line-height: 70px;
+}
+nav .brand .log img{
+	width: 20%;
+	height: 70px;
+
+}
+nav ul{
+	float: right;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+nav ul li{
+	list-style: none;
+
+}
+nav ul li a{
+	position: relative;
+	display: block;
+	height: 70px;
+	line-height: 70px;
+	padding: 0 20px;
+	box-sizing: border-box;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: .5s;
+	border-radius: 8px;
+}
+nav ul li a:hover{
+	color:#262626;
+}
+nav ul li a:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgb(247, 74, 74);
+	transform-origin: right;
+	z-index: -1;
+	transform: scaleX(0);
+	transition: transform .5s;
+}
+nav ul li a:hover:before{
+	transform-origin: left;
+	transform: scaleX(1);
+}
+nav ul li a.active{
+	background: #E2472F;
+	color: #fff;
+	border-radius: 8px;
+
+}
+h2{
+	position: relative;
+	top: 10%;
+	color: #fff;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 60px;
+}
+table{
+	width: 80%;
+	padding: 20px;
+	border: ridge;
+
+}
+table:hover{
+	box-shadow: 0 0 20px #fff;
+}
+.table1{
+	text-align: center;
+	position: relative;
+	left: 10%;
+	top: 280px;
+}
+.table1 th{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.table2{
+	text-align: center;
+	position: relative;
+	left: 10%;
+	top: 100px;
+}
+.table2 th{
+	border-style: none;
+	font-size: 20px;
+	font-weight: bolder;
+}
+.table2 th:hover{
+	color: white;
+	background: rgb(0,0,0,0.6);
+	border-radius: 30px;
+}
+
+.table1 th{
+	border-style: none;
+	font-size: 20px;
+	font-weight: bolder;
+}
+.table1 th:hover{
+	color: white;
+	background: rgb(0,0,0,0.6);
+	border-radius: 30px;
+}
+
+.table2 td{
+	border-style: none;
+}
+.table1 td{
+	border-style: none;
+}
+
+.table2 td:hover{
+	border-style: none;
+	color: white;
+	background: rgb(0,0,0,0.6);
+	border-radius: 30px;
+}
+.table1 td:hover{
+	border-style: none;
+	color: white;
+	background: rgb(0,0,0,0.6);
+	border-radius: 30px;
+}

@@ -1,0 +1,158 @@
+body, html{
+	height: 100%;
+	margin: 0;
+	font-size: 16px;
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	line-height: 1.8em;
+	color: #666;
+
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+section.sec1{
+	height: 35px;
+	box-sizing: border-box;
+    background-repeat: no-repeat;
+}
+nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 70px;
+	background: rgb(0,0,0,0.8);
+	padding: 0 100px;
+	box-sizing: border-box;
+}
+nav .brand{
+	float: left;
+	height: 100%;
+	line-height: 70px;
+}
+nav .brand .log img{
+	width: 20%;
+	height: 70px;
+
+}
+nav ul{
+	float: right;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+nav ul li{
+	list-style: none;
+
+}
+nav ul li a{
+	position: relative;
+	display: block;
+	height: 70px;
+	line-height: 70px;
+	padding: 0 20px;
+	box-sizing: border-box;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: .5s;
+	border-radius: 8px;
+}
+nav ul li a:hover{
+	color:#262626;
+}
+nav ul li a:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgb(247, 74, 74);
+	transform-origin: right;
+	z-index: -1;
+	transform: scaleX(0);
+	transition: transform .5s;
+}
+nav ul li a:hover:before{
+	transform-origin: left;
+	transform: scaleX(1);
+}
+nav ul li a.active{
+	background: #E2472F;
+	color: #fff;
+	border-radius: 8px;
+
+}
+.pimg1 a{
+	text-decoration: none;
+	color: #fff;
+}
+.pimg1 a:hover{
+	color:rgb(255, 0, 0);
+}
+
+.pimg1, .pimg2, .pimg3, .pimg4{
+	position: relative;
+	opacity: 0.70;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.pimg1{
+	background-image: url('image1.jpg');
+	min-height: 100%;
+}
+
+.pimg2{
+	background-image: url('image2.jpg');
+	min-height: 400px;
+}
+
+.pimg3{
+	background-image: url('image3.jpg');
+	min-height: 400px;
+}
+.pimg4{
+	background-image: url('image1.jpg');
+	min-height: 100%;
+}
+
+.section{
+	text-align: center;
+	padding: 50px 80px;
+}
+.section-light{
+	background-color: #f4f4f4;
+	color: #666;
+}
+.section-dark{
+	background-color: #282e34;
+	color: #ddd;
+}
+
+.pimg1 .ptext{
+	position: absolute;
+	top: 40%;
+	width: 100%;
+	text-align: center;
+	color: #000;
+	font-size: 27px;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+}
+.pimg1 .ptext .border:hover{
+	background-color: rgb(216, 212, 212);
+	box-shadow: 0 0 80px #fff;
+	padding: 20px;
+	text-decoration: none;
+	border-radius: 6px;
+}
+footer{
+	width: 100%;
+	padding: 60px 0px;
+	background-color: rgb(0,0,0,0.8);
+}

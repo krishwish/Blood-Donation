@@ -1,0 +1,175 @@
+body, html{
+	height: 100%;
+	margin: 0;
+	font-size: 16px;
+	font-family: "Lato", sans-serif;
+	font-weight: 400;
+	line-height: 1.8em;
+	color: #666;
+	background-image: url(img.jpg);
+	background-size: cover;
+	
+
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+section.sec1{
+	height: 35px;
+	box-sizing: border-box;
+}
+nav{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 70px;
+	background: rgb(0,0,0,0.8);
+	padding: 0 100px;
+	box-sizing: border-box;
+}
+nav .brand{
+	float: left;
+	height: 100%;
+	line-height: 70px;
+}
+nav .brand .log img{
+	width: 20%;
+	height: 70px;
+
+
+}
+nav ul{
+	float: right;
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+nav ul li{
+	list-style: none;
+
+}
+nav ul li a{
+	position: relative;
+	display: block;
+	height: 70px;
+	line-height: 70px;
+	padding: 0 20px;
+	box-sizing: border-box;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: .5s;
+	border-radius: 8px;
+}
+nav ul li a:hover{
+	color:#262626;
+}
+nav ul li a:before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgb(247, 74, 74);
+	transform-origin: right;
+	z-index: -1;
+	transform: scaleX(0);
+	transition: transform .5s;
+}
+nav ul li a:hover:before{
+	transform-origin: left;
+	transform: scaleX(1);
+}
+nav ul li a.active{
+	background: #E2472F;
+	color: #fff;
+	border-radius: 8px;
+
+}
+.shah{
+	height: 300px;
+	width: 300px;
+	padding: 20px 10px;
+border-radius: 80px;
+
+
+}
+.krish{
+	height: 300px;
+	width: 300px;
+	padding: 20px 10px;
+	border-radius: 80px;
+
+
+}
+.dheeru{
+	height: 300px;
+	width: 300px;
+	padding: 20px 10px;
+border-radius: 80px;
+
+
+}
+.gopi{
+	height: 300px;
+	width: 300px;
+	padding: 20px 10px;
+border-radius: 80px;
+
+}
+.borg{
+	position: absolute;
+	height: 200px;
+	width: 300px;
+	background: rgb(0,0,0,0.6);
+	right: 84px;
+	bottom: 11%;
+	border-radius: 50px;
+opacity: .80;
+}
+.bord{
+	position: absolute;
+	height: 200px;
+	width: 300px;
+	background: rgb(0,0,0,0.6);
+	right: 410px;
+	bottom: 11%;
+	border-radius: 50px;
+opacity: .80;
+}
+.bors{
+	position: absolute;
+	height: 200px;
+	width: 300px;
+	background: rgb(0,0,0,0.6);
+	right: 735px;
+	bottom: 11%;
+	border-radius: 50px;
+opacity: .80;
+}
+.bork{
+	position: absolute;
+	height: 200px;
+	width: 300px;
+	background: rgb(0,0,0,0.6);
+	left: 10px;
+	bottom: 11%;
+	border-radius: 50px;
+	opacity: .80;
+
+}
+.borg, .bord, .bors, .bork h2{
+	text-align: center;
+	color: #fff;
+	
+	font-weight: bold;
+}
+.borg, .bord, .bors, .bork p{
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+	font-weight: bold;
+}
